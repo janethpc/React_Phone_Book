@@ -2,7 +2,9 @@ import { BsTrashFill  } from 'react-icons/bs';
 
 
 export const InformationTable = ({contacts, deleteContact}) => {
-  return contacts.map(contact => (
+    const sortedContacts = contacts.sort((a, b) => a.lastName.localeCompare(b.lastName))
+  
+    return sortedContacts.map(contact => (
     <>
     <tr key={contact.phone}>
         <td>{contact.firstName}</td>

@@ -68,7 +68,8 @@ export const PhoneBookForms = () => {
                             type="text"
                             name="FirstName"
                             value={firstName}
-                            onChange={(e) => setFirstName(e.target.value)} />
+                            onChange={(e) => setFirstName(e.target.value)} 
+                            placeholder="coder"/>
                         </div>
                     <div className="mb-3">
                         <label className="form-label">Last Name:</label>
@@ -79,7 +80,8 @@ export const PhoneBookForms = () => {
                             type="text"
                             name="LastName"
                             value={lastName}
-                            onChange={(e) => setLastName(e.target.value)} />
+                            onChange={(e) => setLastName(e.target.value)}
+                            placeholder="byte" />
                        </div>
                        <div className="mb-3">
                         <label className="form-label">Phone:</label>
@@ -89,7 +91,8 @@ export const PhoneBookForms = () => {
                             type="text"
                             name="Phone"
                             value={phone}
-                            onChange={(e) => setPhone(e.target.value)} />
+                            onChange={(e) => setPhone(e.target.value)} 
+                            placeholder="8885559999"/>
                         </div>
                         <input
                         className="btn btn-primary mb-3"
